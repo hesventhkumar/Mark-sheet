@@ -52,7 +52,7 @@
         </tr>
 
         <tr>
-          <td class="px-5 h6" colspan="3"><b class="text-danger">Reg.No</b> <br> (720721104089)</td>
+          <td class="px-4 h6" colspan="3"><b class="text-danger">Reg.No</b> <br> (720721104089)</td>
           <td class="px-4 h6" colspan="3"><b class="text-danger">Enrollment. No </b> <br> 720721104089</td>
           <td class="p-2 h6" colspan="6"><b class="text-danger">Authorised Training Center Name With Code</b> <br>(Authorised Training Center'Name) </td>
 
@@ -86,10 +86,10 @@
             <td>21CS4201</td>
             <td>JAVA PROGRAMMING</td>
             <td>100</td>
-            <td></td>
+            <td><input id="sub1" onkeyup="update(event)" type="text"  style="border: none; width: 35px;  "></td>
             <td>XX</td>
-            <td></td>
-            <td>Zero Zero</td>
+            <td id="res1"></td>
+            <td id="tot1">Zero Zero</td>
 
           </tr>
 
@@ -97,10 +97,10 @@
             <td>21CS4202</td>
             <td>SOFTWARE ENGINEERING</td>
             <td>100</td>
-            <td></td>
+            <td><input id="sub2" onkeyup="update(event)" type="text"  style="border: none; width: 35px;  "></td>
             <td>XX</td>
-            <td></td>
-            <td>Zero Zero</td>
+            <td id="res2"></td>
+            <td id="tot2">Zero Zero</td>
 
           </tr>
 
@@ -108,10 +108,10 @@
             <td>21CS4203</td>
             <td>OPERATING SYSTEM</td>
             <td>100</td>
-            <td></td>
+            <td><input id="sub3" onkeyup="update(event)" type="text"  style="border: none; width: 35px;  "></td>
             <td>XX</td>
-            <td></td>
-            <td>Zero Zero</td>
+            <td id="res3"></td>
+            <td id="tot3">Zero Zero</td>
 
           </tr>
 
@@ -119,10 +119,10 @@
             <td>21CS5202</td>
             <td>THEORY OFCOMPUTING</td>
             <td>100</td>
-            <td></td>
+            <td><input id="sub4"  onkeyup="update(event)" type="text"  style="border: none; width: 35px;  "></td>
             <td>XX</td>
-            <td></td>
-            <td>Zero Zero</td>
+            <td id="res4"></td>
+            <td id="tot4">Zero Zero</td>
 
           </tr>
 
@@ -130,10 +130,10 @@
             <td>21CS5202</td>
             <td>COMPUTER NETWORK</td>
             <td>100</td>
-            <td></td>
+            <td><input id="sub5" onkeyup="update(event)" type="text" style="border: none; width: 35px;  "></td>
             <td>XX</td>
-            <td></td>
-            <td>Zero Zero</td>
+            <td id="res5"></td>
+            <td id="tot5">Zero Zero</td>
 
           </tr>
 
@@ -142,9 +142,9 @@
             <td>OBJECT ORIENTED ANALYSIS AND DESIGN PRACTICAL</td>
             <td>100</td>
             <td>XX</td>
-            <td></td>
-            <td></td>
-            <td>Zero Zero</td>
+            <td><input id="sub6" onkeyup="update(event)" type="text" style="border: none; width: 35px;  "></td>
+            <td id="res6"></td>
+            <td id="tot6">Zero Zero</td>
 
           </tr>
 
@@ -154,25 +154,25 @@
             <td>INTERNET AND WEB TECHNOLOGY  PRACTICAL</td>
             <td>100</td>
             <td>XX</td>
-            <td></td>
-            <td></td>
-            <td>Zero Zero</td>
+            <td><input id="sub7" onkeyup="update(event)" type="text" style="border: none; width: 35px;  "></td>
+            <td id="res7"></td>
+            <td id="tot7">Zero Zero</td>
           </tr>
 
           
           <tr>
             <td>21CS5351</td>
-            <td>INTERNET AND WEB TECHNOLOGY  PRACTICAL</td>
+            <td>DATABASE MANAGEMENT SYSTEM PRACTICAL</td>
             <td>100</td>
             <td>XX</td>
-            <td></td>
-            <td></td>
-            <td>Zero Zero</td>
+            <td><input id="sub8" onkeyup="update(event)" type="text" style="border: none; width: 35px;  "></td>
+            <td id="res8"></td>
+            <td id="tot8">Zero Zero</td>
           </tr>
 
 
           <tr>
-            <td class="text-start ps-3" colspan="7"><p><b>Grand Total:</b>000</p>  <b>in Words</b> Zero Zero Zero</td>
+            <td class="text-start ps-3" colspan="7"><p><b>Grand Total:</b><span id="tot">000</span></p>  <b>in Words</b><span id="word">Zero Zero Zero</span> </td>
           </tr>
           <tr>
             <td colspan="2">Month and Year of Examination</td>
@@ -186,9 +186,9 @@
           <tr>
             <td colspan="2">May 2024</td>
             <td colspan="2"> T5+P3=8</td>
-            <td>PASS</td>
-            <td>86.3%</td>
-            <td>(A+)</td>
+            <td id="pf">Null</td>
+            <td id="percentage">0%</td>
+            <td id="grade">(A+)</td>
 
           </tr>
 
@@ -215,8 +215,12 @@
         </div>
        </div>
 
+      
+
+
 
     </div>
+
     <script src="main.js"></script>
     
 </body>
